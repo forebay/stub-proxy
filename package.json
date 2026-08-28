@@ -1,0 +1,48 @@
+{
+  "name": "stub-proxy",
+  "version": "1.0.0",
+  "description": "The reference app-proxy for the intisy-ai ecosystem: the smallest working front door, kept green against every gate.",
+  "main": "dist/front-door-plugin.js",
+  "type": "module",
+  "license": "MIT",
+  "author": "intisy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intisy-ai/stub-proxy.git"
+  },
+  "keywords": [
+    "intisy-ai",
+    "app-proxy",
+    "front-door",
+    "example",
+    "template"
+  ],
+  "files": [
+    "dist/",
+    "plugin.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "npx tsc && npx esbuild src/front-door-plugin.ts --bundle --platform=node --format=esm --external:@intisy-ai/core-proxy --external:@intisy-ai/core-ir --external:@intisy-ai/anthropic-translator --outfile=dist/front-door-plugin.js",
+    "test": "npm run build && vitest run",
+    "prepublishOnly": "npm run build",
+    "docs": "typedoc"
+  },
+  "devDependencies": {
+    "@intisy-ai/api": "^1.6.0",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.12",
+    "typedoc": "^0.28.20",
+    "typescript": "^5.4.0",
+    "vitest": "^3.2.6"
+  },
+  "dependencies": {
+    "@intisy-ai/anthropic-translator": "^1.2.0",
+    "@intisy-ai/core-ir": "^1.4.0",
+    "@intisy-ai/core-proxy": "^2.1.0"
+  }
+}

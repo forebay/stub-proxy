@@ -1,0 +1,25 @@
+{
+  "$schema": "https://intisy-ai.github.io/api/schema/plugin.schema.json",
+  "id": "stub-proxy",
+  "api": 1,
+  "entry": "dist/front-door-plugin.js",
+  "displayName": "Stub proxy",
+  "capabilities": [
+    "front-door"
+  ],
+  "publish": {
+    "scopedOnly": true,
+    "generatedReadme": true
+  },
+  "repo": {
+    "role": "Reference app-proxy and starting point",
+    "category": "app-proxy",
+    "tech": [
+      "typescript"
+    ],
+    "topics": [
+      "example",
+      "template"
+    ]
+  }
+}
