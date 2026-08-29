@@ -1,4 +1,4 @@
-import type { RateLimitInfo, RoutingProfile } from "@intisy-ai/core-proxy";
+import type { RateLimitInfo, RoutingProfile } from "@intisy-ai/basekit/proxy";
 import { anthropicTranslator } from "@intisy-ai/anthropic-translator";
 
 /** The store key this proxy reads its own routing out of. */

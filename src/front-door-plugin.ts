@@ -1,4 +1,4 @@
-import { frontDoor } from "@intisy-ai/core-proxy";
+import { frontDoor } from "@intisy-ai/basekit/proxy";
 import { stubProfile } from "./profile.js";
 
 const plugin = {

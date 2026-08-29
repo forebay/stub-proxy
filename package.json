@@ -27,7 +27,7 @@
     "node": ">=20.0.0"
   },
   "scripts": {
-    "build": "npx tsc && npx esbuild src/front-door-plugin.ts --bundle --platform=node --format=esm --external:@intisy-ai/core-proxy --external:@intisy-ai/core-ir --external:@intisy-ai/anthropic-translator --outfile=dist/front-door-plugin.js",
+    "build": "npx tsc && npx esbuild src/front-door-plugin.ts --bundle --platform=node --format=esm --external:@intisy-ai/basekit/proxy --external:@intisy-ai/basekit/ir --external:@intisy-ai/anthropic-translator --outfile=dist/front-door-plugin.js",
     "test": "npm run build && vitest run",
     "prepublishOnly": "npm run build",
     "docs": "typedoc"
@@ -42,7 +42,6 @@
   },
   "dependencies": {
     "@intisy-ai/anthropic-translator": "^1.2.0",
-    "@intisy-ai/core-ir": "^1.4.0",
-    "@intisy-ai/core-proxy": "^2.1.0"
+    "@intisy-ai/basekit": "^4.0.0"
   }
 }
