@@ -33,7 +33,7 @@
     "docs": "typedoc"
   },
   "devDependencies": {
-    "@intisy/bayonet": "^1.7.0",
+    "@intisy/bayonet": "^1.8.0",
     "@types/node": "^22.0.0",
     "esbuild": "^0.25.12",
     "typedoc": "^0.28.20",
