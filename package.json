@@ -1,17 +1,17 @@
 {
   "name": "stub-proxy",
   "version": "1.0.0",
-  "description": "The reference app-proxy for the intisy-ai ecosystem: the smallest working front door, kept green against every gate.",
+  "description": "The reference app-proxy for the forebay ecosystem: the smallest working front door, kept green against every gate.",
   "main": "dist/front-door-plugin.js",
   "type": "module",
   "license": "MIT",
   "author": "intisy",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/intisy-ai/stub-proxy.git"
+    "url": "git+https://github.com/forebay/stub-proxy.git"
   },
   "keywords": [
-    "intisy-ai",
+    "forebay",
     "app-proxy",
     "front-door",
     "example",
